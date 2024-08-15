@@ -95,8 +95,8 @@ function App(): ReactElement {
         <button onClick={batchUpdateHandler} style={{ marginRight: '10px' }}>
           batch update
         </button>
-        <p>state1: {state1}</p>
-        <p>state2: {state2}</p>
+        <p>state1 value: {state1}</p>
+        <p>state2 value: {state2}</p>
 
         <div style={{ display: 'flex', marginTop: '50px' }}>
           {/* when we call react functional component, we have to use <> syntax, but not () | param/prop assignment style is "key = {value}" pattern + without comma */}
