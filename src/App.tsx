@@ -12,7 +12,7 @@ import { useCounterHook } from './hooks/useCounterHook';
 const title: string = 'Parent Component';
 const c1Props: { a: number; b: number } = { a: 5555, b: 6666 };
 console.log('parent outside runs');
-// new main branch comments here
+// f1 unique comment added here for testing
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -82,13 +82,13 @@ function App(): ReactElement {
     // Under context provider, the "value" can be shared, accessed, and used directly by any child component under it WITHOUT NEEDING TO USE "PROPS" TO PASS DOWN through each vertical level
     // the "value" prop here must match with the type annotation we defined previously in context file (very important)
     // the "value" prop here is the shared state value + its update function that we want to share with all child components under this context provider (with updated commits)
-    // This is new main branch update after f-4 is created
+    // new branch f1 comments added here for testing
     <GlobalStateContext.Provider value={{ parentGlobalState, setParentGlobalState }}>
       <div>
         {/* {} are used to call js expression directly into jsx code | the expression return value will auto display on screen from jsx code */}
         <h1>{title}</h1>
         <button onClick={setCounterHandler} style={{ marginRight: '10px' }}>
-          add +
+          add +++++++++++++++++++++++++++++++++++
         </button>
         <span>count couner state: {counter}</span>
         <div />
