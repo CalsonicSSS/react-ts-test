@@ -13,6 +13,7 @@ const title: string = 'Parent Component';
 const c1Props: { a: number; b: number } = { a: 5555, b: 6666 };
 console.log('parent outside runs');
 // f1 unique comment added here for testing
+// main branch change 1 for resetting test
 
 // ---------------------------------------------------------------------------------------------------------------------
 
